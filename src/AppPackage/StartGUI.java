@@ -131,7 +131,6 @@ public class StartGUI extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Parasail");
         setBounds(new java.awt.Rectangle(0, 0, 0, 0));
-        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         outputTextArea.setColumns(20);
