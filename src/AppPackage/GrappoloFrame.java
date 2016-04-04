@@ -166,7 +166,7 @@ public class GrappoloFrame extends javax.swing.JFrame {
                 prRdCSVjustCreatedActionPerformed(evt);
             }
         });
-        prPanelMakeInputGrap.add(prRdCSVjustCreated, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 220, -1));
+        prPanelMakeInputGrap.add(prRdCSVjustCreated, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 290, -1));
 
         prRdGroupChooseInputFile.add(prRdCSVcreatedBefore);
         prRdCSVcreatedBefore.setText("Or use an edge file created before:");
@@ -175,7 +175,7 @@ public class GrappoloFrame extends javax.swing.JFrame {
                 prRdCSVcreatedBeforeActionPerformed(evt);
             }
         });
-        prPanelMakeInputGrap.add(prRdCSVcreatedBefore, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 230, -1));
+        prPanelMakeInputGrap.add(prRdCSVcreatedBefore, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 300, -1));
 
         prTxtInputFileJustCreated.setEditable(false);
         prPanelMakeInputGrap.add(prTxtInputFileJustCreated, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 340, -1));
@@ -204,7 +204,7 @@ public class GrappoloFrame extends javax.swing.JFrame {
         prPanelMakeInputGrap.add(btnMakeFile, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 240, 230, 50));
 
         lblSelectWeight.setBorder(javax.swing.BorderFactory.createTitledBorder("Select number for weight"));
-        prPanelMakeInputGrap.add(lblSelectWeight, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 430, 50));
+        prPanelMakeInputGrap.add(lblSelectWeight, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 510, 50));
 
         prRdGroupSelectWeight.add(prRdLengthMaxLength);
         prRdLengthMaxLength.setSelected(true);
@@ -235,7 +235,7 @@ public class GrappoloFrame extends javax.swing.JFrame {
         prPanelMakeInputGrap.add(lblOutputDirForGrappoloInputFile, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, -1, -1));
 
         lblGrappoloInputFile.setText("Enter name for graph file:");
-        prPanelMakeInputGrap.add(lblGrappoloInputFile, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 190, 150, -1));
+        prPanelMakeInputGrap.add(lblGrappoloInputFile, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 190, 190, -1));
 
         prTxtGrappoloInputFile.setText("input.graph");
         prTxtGrappoloInputFile.setToolTipText("");
@@ -244,13 +244,13 @@ public class GrappoloFrame extends javax.swing.JFrame {
                 prTxtGrappoloInputFileKeyReleased(evt);
             }
         });
-        prPanelMakeInputGrap.add(prTxtGrappoloInputFile, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 210, 150, -1));
+        prPanelMakeInputGrap.add(prTxtGrappoloInputFile, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 210, 150, -1));
 
         prTxtAreaMkFile.setColumns(20);
         prTxtAreaMkFile.setRows(5);
         jScrollPane2.setViewportView(prTxtAreaMkFile);
 
-        prPanelMakeInputGrap.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, 430, 100));
+        prPanelMakeInputGrap.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, 510, 110));
 
         btnClear.setText("Clear output window");
         btnClear.addActionListener(new java.awt.event.ActionListener() {
@@ -258,7 +258,7 @@ public class GrappoloFrame extends javax.swing.JFrame {
                 btnClearActionPerformed(evt);
             }
         });
-        prPanelMakeInputGrap.add(btnClear, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 263, 150, 30));
+        prPanelMakeInputGrap.add(btnClear, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 263, 180, 30));
 
         prChBoxShowOutputMakeFile.setSelected(true);
         prChBoxShowOutputMakeFile.setText("Show diagnostic messages");
@@ -278,15 +278,15 @@ public class GrappoloFrame extends javax.swing.JFrame {
         prPanelRunGrappolo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         prChkBoxStrongScaling.setText("Strong Scaling");
-        prPanelRunGrappolo.add(prChkBoxStrongScaling, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 200, -1, -1));
+        prPanelRunGrappolo.add(prChkBoxStrongScaling, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, -1, -1));
 
         prChkBoxVF.setText("Vertex following");
         prChkBoxVF.setEnabled(false);
-        prPanelRunGrappolo.add(prChkBoxVF, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 180, -1, -1));
+        prPanelRunGrappolo.add(prChkBoxVF, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 180, -1, -1));
 
         prChkBoxShowOutputGrappolo.setSelected(true);
         prChkBoxShowOutputGrappolo.setText("Show diagnostic messages");
-        prPanelRunGrappolo.add(prChkBoxShowOutputGrappolo, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 180, -1, -1));
+        prPanelRunGrappolo.add(prChkBoxShowOutputGrappolo, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 180, -1, -1));
 
         lblMinSize.setText("Min Size");
         lblMinSize.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
@@ -297,23 +297,23 @@ public class GrappoloFrame extends javax.swing.JFrame {
         prPanelRunGrappolo.add(lblCthreshold, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, -1, 20));
 
         prTxtMinSize.setText("100000");
-        prPanelRunGrappolo.add(prTxtMinSize, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 240, 70, -1));
+        prPanelRunGrappolo.add(prTxtMinSize, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 240, 70, -1));
 
         prTxtCthreshold.setText("0.01");
-        prPanelRunGrappolo.add(prTxtCthreshold, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 210, 70, -1));
+        prPanelRunGrappolo.add(prTxtCthreshold, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 210, 70, -1));
 
         lblThreshold.setText("Threshold");
         lblThreshold.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
-        prPanelRunGrappolo.add(lblThreshold, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 60, 20));
+        prPanelRunGrappolo.add(lblThreshold, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 80, 20));
 
         prTxtThreshold.setText("0.000001");
-        prPanelRunGrappolo.add(prTxtThreshold, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 180, 70, -1));
+        prPanelRunGrappolo.add(prTxtThreshold, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 180, 70, -1));
 
         prTxtArea.setColumns(20);
         prTxtArea.setRows(5);
         jScrollPane1.setViewportView(prTxtArea);
 
-        prPanelRunGrappolo.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, 430, 120));
+        prPanelRunGrappolo.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, 510, 130));
 
         btnGrappolo.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         btnGrappolo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AppPackage/Images/grappolo_button.png"))); // NOI18N
@@ -324,7 +324,7 @@ public class GrappoloFrame extends javax.swing.JFrame {
                 btnGrappoloActionPerformed(evt);
             }
         });
-        prPanelRunGrappolo.add(btnGrappolo, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 240, 150, 30));
+        prPanelRunGrappolo.add(btnGrappolo, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 240, 150, 30));
 
         prTxtGrappoloInputFileCopy.setEditable(false);
         prTxtGrappoloInputFileCopy.setToolTipText("");
@@ -332,10 +332,10 @@ public class GrappoloFrame extends javax.swing.JFrame {
 
         prTxtGrappoloOutputFile.setText("ClusterInfo.grap");
         prTxtGrappoloOutputFile.setToolTipText("");
-        prPanelRunGrappolo.add(prTxtGrappoloOutputFile, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 150, 150, -1));
+        prPanelRunGrappolo.add(prTxtGrappoloOutputFile, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 150, 150, -1));
 
         lblGrappoloOutputFile.setText("Enter name for cluster file:");
-        prPanelRunGrappolo.add(lblGrappoloOutputFile, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 130, 150, -1));
+        prPanelRunGrappolo.add(lblGrappoloOutputFile, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 130, 180, -1));
 
         btnOutputDirGrappolo.setText("Browse");
         btnOutputDirGrappolo.addActionListener(new java.awt.event.ActionListener() {
@@ -343,7 +343,7 @@ public class GrappoloFrame extends javax.swing.JFrame {
                 btnOutputDirGrappoloActionPerformed(evt);
             }
         });
-        prPanelRunGrappolo.add(btnOutputDirGrappolo, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 150, -1, -1));
+        prPanelRunGrappolo.add(btnOutputDirGrappolo, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 150, -1, -1));
 
         prTxtOutputDirForGrappoloFile.setToolTipText("Select folder");
         prPanelRunGrappolo.add(prTxtOutputDirForGrappoloFile, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 190, -1));
@@ -388,16 +388,16 @@ public class GrappoloFrame extends javax.swing.JFrame {
                 btnClearOutputActionPerformed(evt);
             }
         });
-        prPanelRunGrappolo.add(btnClearOutput, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 210, 150, -1));
+        prPanelRunGrappolo.add(btnClearOutput, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 210, 150, -1));
 
         prRdGroupColoringMap.add(prRdColoring);
         prRdColoring.setSelected(true);
         prRdColoring.setText("Coloring");
-        prPanelRunGrappolo.add(prRdColoring, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 240, -1, -1));
+        prPanelRunGrappolo.add(prRdColoring, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 240, -1, -1));
 
         prRdGroupColoringMap.add(prRdMap);
         prRdMap.setText("Map");
-        prPanelRunGrappolo.add(prRdMap, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 240, -1, -1));
+        prPanelRunGrappolo.add(prRdMap, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 240, -1, -1));
 
         prChBoxColorMap.setSelected(true);
         prChBoxColorMap.setText("Coloring/Map");
@@ -406,7 +406,7 @@ public class GrappoloFrame extends javax.swing.JFrame {
                 prChBoxColorMapActionPerformed(evt);
             }
         });
-        prPanelRunGrappolo.add(prChBoxColorMap, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 220, -1, -1));
+        prPanelRunGrappolo.add(prChBoxColorMap, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, -1, -1));
 
         btnIcon1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AppPackage/Images/grapes_small.png"))); // NOI18N
         btnIcon1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -415,7 +415,7 @@ public class GrappoloFrame extends javax.swing.JFrame {
                 btnIcon1ActionPerformed(evt);
             }
         });
-        prPanelRunGrappolo.add(btnIcon1, new org.netbeans.lib.awtextra.AbsoluteConstraints(363, 0, 80, 80));
+        prPanelRunGrappolo.add(btnIcon1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 0, 80, 80));
 
         prTabbedPaneGrappolo.addTab("Run Grappolo", prPanelRunGrappolo);
 
@@ -427,7 +427,7 @@ public class GrappoloFrame extends javax.swing.JFrame {
         prPanelProcessGrappoloOutput.add(prTxtGrappoloAssociatedFile, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 330, -1));
 
         lblGrappoloAssociatedFile.setText("Associated Grappolo output file:");
-        prPanelProcessGrappoloOutput.add(lblGrappoloAssociatedFile, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 180, -1));
+        prPanelProcessGrappoloOutput.add(lblGrappoloAssociatedFile, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 220, -1));
 
         btnChooseOrigFastaFile.setText("Browse");
         btnChooseOrigFastaFile.addActionListener(new java.awt.event.ActionListener() {
@@ -505,7 +505,7 @@ public class GrappoloFrame extends javax.swing.JFrame {
         prPanelProcessGrappoloOutput.add(btnOutputDirFinalFile, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 200, 80, -1));
 
         lblFinalFile.setText("Enter name for processed file:");
-        prPanelProcessGrappoloOutput.add(lblFinalFile, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 150, -1));
+        prPanelProcessGrappoloOutput.add(lblFinalFile, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 240, -1));
 
         prTxtFinalFile.setText("ClusterMembership.txt");
         prTxtFinalFile.setToolTipText("");
@@ -529,9 +529,9 @@ public class GrappoloFrame extends javax.swing.JFrame {
 
         prTabbedPaneGrappolo.addTab("Process Grappolo Output", prPanelProcessGrappoloOutput);
 
-        getContentPane().add(prTabbedPaneGrappolo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 450, 430));
+        getContentPane().add(prTabbedPaneGrappolo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 560, 460));
 
-        setSize(new java.awt.Dimension(466, 471));
+        setSize(new java.awt.Dimension(573, 499));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -1739,7 +1739,7 @@ public class GrappoloFrame extends javax.swing.JFrame {
     // I'm not using system dependent end-of-line character
     private final  String newline = "\n";
     // External executable
-    private String theExec = "driverForGraphClustering.exe";
+    private String theExec = "driverForGraphClustering";
 
     // Variables for tab "Process Grappolo Output"
     private Integer numSeqFasta = 0;

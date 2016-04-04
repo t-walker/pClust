@@ -138,14 +138,14 @@ public class StartGUI extends javax.swing.JFrame {
         outputTextArea.setRows(5);
         jScrollPane1.setViewportView(outputTextArea);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 450, 450, 140));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 490, 490, 140));
 
         lblGapExtend.setText("Gap Extend Penalty");
-        getContentPane().add(lblGapExtend, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, -1, -1));
+        getContentPane().add(lblGapExtend, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 60, -1, -1));
 
         gapExtend.setModel(new javax.swing.SpinnerNumberModel(1, 0, 20, 1));
         gapExtend.setValue(1);
-        getContentPane().add(gapExtend, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 80, 90, -1));
+        getContentPane().add(gapExtend, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, 90, -1));
 
         cutoff.setModel(new javax.swing.SpinnerNumberModel(7, 1, 50, 1));
         cutoff.setValue(7);
@@ -156,7 +156,7 @@ public class StartGUI extends javax.swing.JFrame {
 
         matchSimilarity.setModel(new javax.swing.SpinnerNumberModel(40, 0, 100, 1));
         matchSimilarity.setValue(40);
-        getContentPane().add(matchSimilarity, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 90, -1));
+        getContentPane().add(matchSimilarity, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 140, 90, -1));
 
         alignOverLongerSeq.setModel(new javax.swing.SpinnerNumberModel(80, 0, 100, 0));
         alignOverLongerSeq.setValue(80);
@@ -166,14 +166,14 @@ public class StartGUI extends javax.swing.JFrame {
         getContentPane().add(lblBitPrecision, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, -1, -1));
 
         lblMatchSimilarity.setText("Match Similarity, %");
-        getContentPane().add(lblMatchSimilarity, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 120, -1, -1));
+        getContentPane().add(lblMatchSimilarity, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 120, -1, -1));
 
         optimalScoreOverSelfScore.setModel(new javax.swing.SpinnerNumberModel(30, 0, 100, 1));
         optimalScoreOverSelfScore.setValue(30);
-        getContentPane().add(optimalScoreOverSelfScore, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 140, 90, -1));
+        getContentPane().add(optimalScoreOverSelfScore, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 140, 90, -1));
 
         lblOptimalScore.setText("Optimal Score, %");
-        getContentPane().add(lblOptimalScore, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 120, -1, -1));
+        getContentPane().add(lblOptimalScore, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 120, -1, -1));
 
         txtDataFile.setToolTipText("Select input FASTA file");
         getContentPane().add(txtDataFile, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 360, -1));
@@ -182,10 +182,10 @@ public class StartGUI extends javax.swing.JFrame {
         getContentPane().add(lblInputFile, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, -1, -1));
 
         txtOutputDir.setToolTipText("Select folder");
-        getContentPane().add(txtOutputDir, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, 360, -1));
+        getContentPane().add(txtOutputDir, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 340, 360, -1));
 
         lblOutputDir.setText("Select Output Folder:");
-        getContentPane().add(lblOutputDir, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, -1, -1));
+        getContentPane().add(lblOutputDir, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, -1, -1));
 
         btnInputDataFile.setText("Browse");
         btnInputDataFile.addActionListener(new java.awt.event.ActionListener() {
@@ -201,7 +201,7 @@ public class StartGUI extends javax.swing.JFrame {
                 btnOutputDirActionPerformed(evt);
             }
         });
-        getContentPane().add(btnOutputDir, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 320, -1, -1));
+        getContentPane().add(btnOutputDir, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 340, -1, -1));
 
         btnRunPclust.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         btnRunPclust.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AppPackage/Images/pClust_run_button.png"))); // NOI18N
@@ -211,18 +211,18 @@ public class StartGUI extends javax.swing.JFrame {
                 btnRunPclustActionPerformed(evt);
             }
         });
-        getContentPane().add(btnRunPclust, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 360, 130, 80));
+        getContentPane().add(btnRunPclust, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 400, 130, 80));
 
         lblGapOpen.setText("Gap Opening Penalty");
-        getContentPane().add(lblGapOpen, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 60, -1, -1));
+        getContentPane().add(lblGapOpen, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 60, -1, -1));
 
         gapOpen.setModel(new javax.swing.SpinnerNumberModel(10, 0, 50, 1));
         gapOpen.setValue(10);
-        getContentPane().add(gapOpen, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, 90, -1));
+        getContentPane().add(gapOpen, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 80, 90, -1));
 
         prComboBitPrecision.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "8", "16", "32", "64" }));
         prComboBitPrecision.setSelectedIndex(1);
-        getContentPane().add(prComboBitPrecision, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 60, -1));
+        getContentPane().add(prComboBitPrecision, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 70, -1));
 
         lblAlignOverLongerSeq1.setText("Alignment Length, %");
         getContentPane().add(lblAlignOverLongerSeq1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, -1, -1));
@@ -242,10 +242,10 @@ public class StartGUI extends javax.swing.JFrame {
 
         prComboScoringMatrix.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "blosum30", "blosum35", "blosum40", "blosum45", "blosum50", "blosum55", "blosum60", "blosum62", "blosum65", "blosum70", "blosum75", "blosum80", "blosum85", "blosum90", "blosum100", "pam10", "pam20", "pam30", "pam40", "pam50", "pam60", "pam70", "pam80", "pam90", "pam100", "pam110", "pam120", "pam130", "pam140", "pam150", "pam160", "pam170", "pam180", "pam190", "pam200", "pam210", "pam220", "pam230", "pam240", "pam250", "pam260", "pam270", "pam280", "pam290", "pam300", "pam310", "pam320", "pam330", "pam340", "pam350", "pam360", "pam370", "pam380", "pam390", "pam400", "pam410", "pam420", "pam430", "pam440", "pam450", "pam460", "pam470", "pam480", "pam490", "pam500" }));
         prComboScoringMatrix.setSelectedIndex(7);
-        getContentPane().add(prComboScoringMatrix, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 200, 140, -1));
+        getContentPane().add(prComboScoringMatrix, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 200, 140, -1));
 
         lblScoringMatrix.setText("Select Scoring Matrix:");
-        getContentPane().add(lblScoringMatrix, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 180, -1, -1));
+        getContentPane().add(lblScoringMatrix, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 180, -1, -1));
 
         prTxtOutputFileCSV.setText("edges.csv");
         prTxtOutputFileCSV.setToolTipText("Enter output file name");
@@ -254,20 +254,20 @@ public class StartGUI extends javax.swing.JFrame {
                 prTxtOutputFileCSVKeyReleased(evt);
             }
         });
-        getContentPane().add(prTxtOutputFileCSV, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 370, 150, -1));
+        getContentPane().add(prTxtOutputFileCSV, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 390, 150, -1));
 
         lblOutputFileCSV.setText("Enter output file name (.csv):");
-        getContentPane().add(lblOutputFileCSV, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, -1, -1));
+        getContentPane().add(lblOutputFileCSV, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 370, -1, -1));
 
         lblOutputFileCSVCopy.setText("Your output file name is:");
-        getContentPane().add(lblOutputFileCSVCopy, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 294, -1, 20));
+        getContentPane().add(lblOutputFileCSVCopy, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 310, -1, 20));
 
         prTxtOutputFileCSVCopy.setEditable(false);
         prTxtOutputFileCSVCopy.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         prTxtOutputFileCSVCopy.setText("edges.csv");
         prTxtOutputFileCSVCopy.setToolTipText("Enter output file name");
         prTxtOutputFileCSVCopy.setBorder(null);
-        getContentPane().add(prTxtOutputFileCSVCopy, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 290, 110, 30));
+        getContentPane().add(prTxtOutputFileCSVCopy, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 300, 110, 30));
 
         btnCreateInputFileDialog.setText("Create Joined FASTA File");
         btnCreateInputFileDialog.setActionCommand("");
@@ -276,7 +276,7 @@ public class StartGUI extends javax.swing.JFrame {
                 btnCreateInputFileDialogActionPerformed(evt);
             }
         });
-        getContentPane().add(btnCreateInputFileDialog, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 160, 30));
+        getContentPane().add(btnCreateInputFileDialog, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 180, 30));
 
         btnRunGrappolo.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         btnRunGrappolo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AppPackage/Images/grappolo_button.png"))); // NOI18N
@@ -286,11 +286,11 @@ public class StartGUI extends javax.swing.JFrame {
                 btnRunGrappoloActionPerformed(evt);
             }
         });
-        getContentPane().add(btnRunGrappolo, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 360, 140, 80));
+        getContentPane().add(btnRunGrappolo, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 400, 140, 80));
 
         prChBoxShowOutput.setSelected(true);
         prChBoxShowOutput.setText("Show diagnostic messages");
-        getContentPane().add(prChBoxShowOutput, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 390, -1, -1));
+        getContentPane().add(prChBoxShowOutput, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 420, -1, -1));
 
         btnClear.setText("Clear output window");
         btnClear.addActionListener(new java.awt.event.ActionListener() {
@@ -298,7 +298,7 @@ public class StartGUI extends javax.swing.JFrame {
                 btnClearActionPerformed(evt);
             }
         });
-        getContentPane().add(btnClear, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 420, 150, -1));
+        getContentPane().add(btnClear, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 450, 150, -1));
 
         btnIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AppPackage/Images/spiral_small.png"))); // NOI18N
         btnIcon.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -308,7 +308,7 @@ public class StartGUI extends javax.swing.JFrame {
                 btnIconActionPerformed(evt);
             }
         });
-        getContentPane().add(btnIcon, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 10, 80, 80));
+        getContentPane().add(btnIcon, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 10, 80, 80));
 
         btnCureFiles.setText("Cure DOS Files");
         btnCureFiles.addActionListener(new java.awt.event.ActionListener() {
@@ -318,7 +318,7 @@ public class StartGUI extends javax.swing.JFrame {
         });
         getContentPane().add(btnCureFiles, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 10, 140, 30));
 
-        setSize(new java.awt.Dimension(479, 626));
+        setSize(new java.awt.Dimension(591, 676));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -710,7 +710,7 @@ public class StartGUI extends javax.swing.JFrame {
     private javax.swing.JTextField txtDataFile;
     private javax.swing.JTextField txtOutputDir;
     // End of variables declaration//GEN-END:variables
-    private String theExec = "parasail_all.exe ";
+    private String theExec = "parasail_all ";
     private String dataFile = ""; // input fasta file
     private String outputFileName = ""; // output file name
     // System-independent newline character

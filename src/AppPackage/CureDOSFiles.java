@@ -65,7 +65,7 @@ public class CureDOSFiles extends javax.swing.JDialog {
 
         lblSelectFiles.setText("Select fasta files to cure:");
         getContentPane().add(lblSelectFiles, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, -1, -1));
-        getContentPane().add(txtSelectFiles, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 380, -1));
+        getContentPane().add(txtSelectFiles, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 430, -1));
 
         btnSelectFiles.setText("Browse");
         btnSelectFiles.addActionListener(new java.awt.event.ActionListener() {
@@ -73,17 +73,17 @@ public class CureDOSFiles extends javax.swing.JDialog {
                 btnSelectFilesActionPerformed(evt);
             }
         });
-        getContentPane().add(btnSelectFiles, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 40, 80, -1));
+        getContentPane().add(btnSelectFiles, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 40, 80, -1));
 
         txtAreaTest.setColumns(20);
         txtAreaTest.setRows(5);
         jScrollPane1.setViewportView(txtAreaTest);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 490, 160));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 540, 160));
 
         lblSelectOutputDir.setText("Select folder for storing the output files:");
         getContentPane().add(lblSelectOutputDir, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, -1, -1));
-        getContentPane().add(txtSelectOutputDir, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 380, -1));
+        getContentPane().add(txtSelectOutputDir, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 430, -1));
 
         btnSelectOutputDir.setText("Browse");
         btnSelectOutputDir.addActionListener(new java.awt.event.ActionListener() {
@@ -91,7 +91,7 @@ public class CureDOSFiles extends javax.swing.JDialog {
                 btnSelectOutputDirActionPerformed(evt);
             }
         });
-        getContentPane().add(btnSelectOutputDir, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 100, 80, -1));
+        getContentPane().add(btnSelectOutputDir, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 100, 80, -1));
 
         btnCureFiles.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         btnCureFiles.setText("Cure Files");
@@ -100,7 +100,7 @@ public class CureDOSFiles extends javax.swing.JDialog {
                 btnCureFilesActionPerformed(evt);
             }
         });
-        getContentPane().add(btnCureFiles, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 140, 150, 30));
+        getContentPane().add(btnCureFiles, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 140, 150, 30));
 
         prChBoxShowOutput.setSelected(true);
         prChBoxShowOutput.setText("Show diagnostic messages");
@@ -112,9 +112,9 @@ public class CureDOSFiles extends javax.swing.JDialog {
                 btnClearActionPerformed(evt);
             }
         });
-        getContentPane().add(btnClear, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 140, 150, 30));
+        getContentPane().add(btnClear, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 140, 180, 30));
 
-        setSize(new java.awt.Dimension(508, 379));
+        setSize(new java.awt.Dimension(604, 379));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
     /**
