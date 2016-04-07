@@ -160,7 +160,7 @@ public class CureDOSFiles extends javax.swing.JDialog {
             this.files = fc.getSelectedFiles();
             // Display the selected files
             for(i = 0; i < this.files.length; i++){
-                fileNames += "\"" + this.files[i].getName() + "\" ";
+                fileNames += this.files[i].getName();
             }
             this.txtSelectFiles.setText(fileNames);
 

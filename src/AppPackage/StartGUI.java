@@ -413,7 +413,7 @@ public class StartGUI extends javax.swing.JFrame {
     
         // Explanaition: the filename is surrounded with double quotes on Win,
         // but on Mac empty spaces are plugged with '*'. This is Win version.
-        String inputFastaFile =  "\"" + this.txtDataFile.getText() + "\""; // Returns the full path.
+        String inputFastaFile = this.txtDataFile.getText() ; // Returns the full path.
         this.dataFile = inputFastaFile;
         
         // Get value from selected radiobutton
@@ -426,8 +426,8 @@ public class StartGUI extends javax.swing.JFrame {
             rd = "sw";
         String funcname = rd + "_stats_striped_" + this.prComboBitPrecision.getSelectedItem().toString();
 
-        String outputFile = "\"" + this.txtOutputDir.getText() + File.separator
-                + this.prTxtOutputFileCSV.getText() + "\"";
+        String outputFile = this.txtOutputDir.getText() + File.separator
+                + this.prTxtOutputFileCSV.getText();
         // Check if output file with such name already exists
         File out = new File(this.txtOutputDir.getText() + File.separator
                 + this.prTxtOutputFileCSV.getText());
@@ -599,7 +599,7 @@ public class StartGUI extends javax.swing.JFrame {
         // Passing some variables
         // Grappolo input file is pGraph output file (.csv)
         if(!"".equals(this.outputFileName)){
-            fr.inputFileName = this.outputFileName.substring(1, this.outputFileName.length()-1); // remove quotes on both ends
+            fr.inputFileName = this.outputFileName; // remove quotes on both ends
         }else{
             fr.inputFileName = "";
         }

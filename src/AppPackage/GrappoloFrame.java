@@ -936,8 +936,7 @@ public class GrappoloFrame extends javax.swing.JFrame {
         try {
             owr = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(outputfilename)));
             try {
-                lineToPrint = Integer.toString(numVertices) + " " + Integer.toString(numEdges*2) + " 1" + newline;
-                owr.write(lineToPrint);
+                lineToPrint = Integer.toString(numVertices) + " " + Integer.toString(numEdges) + " 1" + newline;                owr.write(lineToPrint);
                 cur = 0;
                 while(!graph.isEmpty()){
                     currentList = graph.get(cur);
@@ -1078,10 +1077,10 @@ public class GrappoloFrame extends javax.swing.JFrame {
         if(this.grappoloInputFileName.startsWith("\"") && this.grappoloInputFileName.endsWith("\""))
             inputFile = this.grappoloInputFileName;
         else
-            inputFile = "\"" + this.grappoloInputFileName + "\"";
+            inputFile = this.grappoloInputFileName;
         
-        String outputFile = "\"" + this.prTxtOutputDirForGrappoloFile.getText()
-                + File.separator + this.prTxtGrappoloOutputFile.getText() + "\"";
+        String outputFile = this.prTxtOutputDirForGrappoloFile.getText()
+                + File.separator + this.prTxtGrappoloOutputFile.getText();
         
         // 1. Constructing command line; output is mandatory
         cmd = this.theExec + " -f 5"
@@ -1138,7 +1137,7 @@ public class GrappoloFrame extends javax.swing.JFrame {
                     this.prTxtArea.append("Grappolo standard output:" 
                             + this.newline + standardOutput.toString());
             }
-            
+
             // Reading error output
             StringBuffer standardError = new StringBuffer();
             while ((numChars = esr.read(plainText)) > 0) {
@@ -1161,6 +1160,9 @@ public class GrappoloFrame extends javax.swing.JFrame {
                 if(this.prChkBoxShowOutputGrappolo.isSelected()){
                     this.prTxtArea.append("The output file is stored at:\n" + outputFile + "\n");
                 }
+                
+                this.prTxtArea.append(cmd);
+                
                 // Show success pop-up.
                 JOptionPane.showMessageDialog(this, "File " + this.prTxtGrappoloOutputFile.getText() + " created successfully",
                     "File Created Successfully", JOptionPane.INFORMATION_MESSAGE);
