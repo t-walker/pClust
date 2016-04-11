@@ -317,8 +317,8 @@ public class GrappoloFrame extends javax.swing.JFrame {
 
         btnGrappolo.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         btnGrappolo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AppPackage/Images/grappolo_button.png"))); // NOI18N
+        btnGrappolo.setText("Run Grappolo");
         btnGrappolo.setToolTipText("");
-        btnGrappolo.setLabel("Run Grappolo");
         btnGrappolo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGrappoloActionPerformed(evt);

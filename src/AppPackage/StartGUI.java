@@ -475,7 +475,7 @@ public class StartGUI extends javax.swing.JFrame {
         try{
             // The executable theExec is in the class folder "bin"
             cmd = dir.getCanonicalPath() + File.separator + "Resources" 
-                    + File.separator + "bin" + File.separator + cmd; //ADDED
+                    + File.separator + "bin/bin" + File.separator + cmd; //ADDED
 
         }catch(Exception e){
             JOptionPane.showMessageDialog(this, 
