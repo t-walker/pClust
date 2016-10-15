@@ -318,7 +318,7 @@ public class StartGUI extends javax.swing.JFrame {
         });
         getContentPane().add(btnCureFiles, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 10, 140, 30));
 
-        setSize(new java.awt.Dimension(591, 676));
+        setSize(new java.awt.Dimension(528, 676));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -474,8 +474,7 @@ public class StartGUI extends javax.swing.JFrame {
         File dir = new File("."); // ADDED
         try{
             // The executable theExec is in the class folder "bin"
-            cmd = dir.getCanonicalPath() + File.separator + "Resources" 
-                    + File.separator + "bin" + File.separator + cmd; //ADDED
+            cmd = dir.getCanonicalPath() + File.separator + "bin" + File.separator + cmd; //ADDED
 
         }catch(Exception e){
             JOptionPane.showMessageDialog(this, 
